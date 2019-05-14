@@ -17,5 +17,9 @@ class HomeActivity : BaseActivity<HomePresenter, HomeView>(R.layout.activity_hom
             presenter.onRecyclerButtonClick()
         }
 
+        findViewById<Button>(R.id.home_customview_button).setOnClickListener {
+            presenter.onCustomViewButtonClick()
+        }
+
     }
 }

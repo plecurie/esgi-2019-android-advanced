@@ -6,4 +6,8 @@ class HomePresenter : BasePresenter<HomeView>() {
     fun onRecyclerButtonClick() {
         navigator.toSimpleList()
     }
+
+    fun onCustomViewButtonClick() {
+        navigator.toCustomView()
+    }
 }
