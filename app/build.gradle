@@ -12,6 +12,11 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        buildConfigField "String", "FLICKR_PHOTO_URL_FORMAT", '"http://farm{farm-id}.staticflickr.com/{server-id}/{photo-id}_{photo-secret}_b.jpg"'
+        buildConfigField "String", "FLICKR_API_URL", '"https://api.flickr.com/services/rest/"'
+        buildConfigField "String", "FLICKR_API_KEY", '"d04bef20baac69da376a946dc829d0f1"'
+        buildConfigField "String", "FLICKR_API_FORMAT", '"json"'
+        buildConfigField "String", "FLICKR_API_CALLBACK", '"1"'
     }
     buildTypes {
         release {
