@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">AndroidAdvanced</string>
-    <string name="home_recyclerview_button_text">RecyclerView</string>
-    <string name="home_title_text">Demo Application</string>
-    <string name="home_customview_button_text">custom view</string>
+    <string name="app_name">MyCustomComponent</string>
+    <string name="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+    <string name="todo">TODO</string>
+    <string name="description">Description of the Image</string>
+    <string name="instruction">Say something</string>
 </resources>

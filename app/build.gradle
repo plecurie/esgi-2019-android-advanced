@@ -4,29 +4,22 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-ext.retrofit_version = '2.5.0'
-ext.okhttp_version = '3.14.1'
 ext.stetho_version = '1.5.1'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.maruani.esgi.androidadvanced"
-        minSdkVersion 21
+        applicationId "com.example.chewbs.mycustomcomponent"
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "FLICKR_PHOTO_URL_FORMAT", '"http://farm{farm-id}.staticflickr.com/{server-id}/{photo-id}_{photo-secret}_b.jpg"'
-        buildConfigField "String", "FLICKR_API_URL", '"https://api.flickr.com/services/rest/"'
-        buildConfigField "String", "FLICKR_API_KEY", '"d04bef20baac69da376a946dc829d0f1"'
-        buildConfigField "String", "FLICKR_API_FORMAT", '"json"'
-        buildConfigField "String", "FLICKR_API_CALLBACK", '"1"'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -39,13 +32,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-    //Retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-
-    //OkHttp 3
-    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
 
     //Androidx
     implementation "androidx.appcompat:appcompat:1.0.2"
